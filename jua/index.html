@@ -1,68 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crudscope</title>
+    <title>CRUD.STORE</title>
     <link rel="stylesheet" href="style.css">
-     <link href="https://db.onlinewebfonts.com/c/1c5965c2b1dcdea439b54c3ac60cee38?family=Ubuntu" rel="stylesheet"> 
-    <link href="https://db.onlinewebfonts.com/c/0d4e1383accd17a50bcc7d69f5ac7582?family=Lilita+One" rel="stylesheet"> 
-    </head>
+</head>
 <body>
-    <header class="cabeza">
+    
+    <div class="top-banner">
+        <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+        <button class="close-btn">✕</button>
+    </div>
 
-        <div class="heade">
-            <p class="parrafo">Sign up and get 20% off to your first order. <u>Sign Up Now</u> </p>
-            <p class="equis">X</p>
-        </div>
-        <div class="nave">
-            <nav class="naveg">
-                <h1>CRUD.STORE</h1>
-                <li><a href="">Shop</a></li>
-                <li><a href="">On Sale</a></li>
-                <li><a href="">New Arrivals</a></li>
-                <li><a href="">Brands</a></li>
-                <input type="text" placeholder="     Search  For  Products">
-                <img src="./carrito-de-compras.png" alt="">
-                <img  src="./avatar.png" alt="">
+    <header>
+        <div class="container">
+            <h1 class="logo">CRUD.STORE</h1>
+            
+            <nav>
+                <a href="#">Shop</a>
+                <a href="#">On Sale</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Brands</a>
             </nav>
+
+            <input type="search" placeholder="Search for products...">
+
+            <div class="icons">
+                <button>🛒</button>
+                <button>👤</button>
+            </div>
         </div>
     </header>
-    <main class="pers">
-            <div class="lol">
-               
-                <h2 class="find">FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
-                <p class="text">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                <button class="now">   Shop  Now</button>
-                <div class="containt">
-                    <div>
-                        <h3>200+</h3>
-                        <p>International Brands</p>
-                    </div>
-                    <div>
-                        <h3>2,000+</h3>
-                        <p>High-Quality Products</p>
-                    </div>
-                    <div>
-                        <h3>30,000+</h3>
-                        <p>Happy Customers</p>
-                    
-                    </div>
-                    <div class="vec">
-                         <img src="./Vector.png" alt="">
-                    </div>
-                    <div class="tor">
-                        <img src="./Vector.png" alt="">
-                    </div>
-                       
+
+    <section class="hero">
+        <div class="hero-left">
+            <h2>FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+            <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            <button class="btn-black">Shop Now</button>
+
+            <div class="stats">
+                <div>
+                    <h3>200+</h3>
+                    <p>International Brands</p>
                 </div>
-                    
+                <div>
+                    <h3>2,000+</h3>
+                    <p>High-Quality Products</p>
+                </div>
+                <div>
+                    <h3>30,000+</h3>
+                    <p>Happy Customers</p>
+                </div>
             </div>
-                           
+        </div>
+
+        <div class="hero-right">
             
-    </main>
-    
-   
-    <footer></footer>
+            <span class="star star-1">✦</span>
+            <span class="star star-2">✦</span>
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="container">
+            <span>VERSACE</span>
+            <span>ZARA</span>
+            <span>GUCCI</span>
+            <span>PRADA</span>
+            <span>Calvin Klein</span>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>NEW ARRIVALS</h2>
+            
+            <div class="product-grid">
+                <div class="product">
+                    <img src="./d40da9a3a7234235e66d6695d9d7098fc3289872.png" alt="">
+                    <h3>T-shirt with Tape Details</h3>
+                    <div class="rating">★★★★☆ 4.5/5</div>
+                    <p class="price">$120</p>
+                </div>
+
+                <div class="product">
+                    <img src="./769b9d60ff941dde9bc0e54431b8d8fe3182f5e9.png" alt="Jeans">
+                    <h3>Skinny Fit Jeans</h3>
+                    <div class="rating">★★★☆☆ 3.5/5</div>
+                    <p class="price">$240 <span class="old">$260</span> <span class="discount">-20%</span></p>
+                </div>
+
+                <div class="product">
+                    <img src="./bbf411c25fc84f87eeac1062fbe47f49c192d4f2.png" alt="Shirt">
+                    <h3>Checkered Shirt</h3>
+                    <div class="rating">★★★★☆ 4.5/5</div>
+                    <p class="price">$180</p>
+                </div>
+
+                <div class="product">
+                    <img src="./345742c27cc557f42cf1d489f7cc811856b90e9f(2).png" alt="T-shirt">
+                    <h3>Sleeve Striped T-shirt</h3>
+                    <div class="rating">★★★★☆ 4.5/5</div>
+                    <p class="price">$130 <span class="old">$160</span> <span class="discount">-30%</span></p>
+                </div>
+            </div>
+
+            <button class="btn-white">View All</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>TOP SELLING</h2>
+            
+            <div class="product-grid">
+                <div class="product">
+                    <img src="./e01f5d3cd9029bd465a4c7158689ab1619693014.png" alt="Shirt">
+                    <h3>Vertical Striped Shirt</h3>
+                    <div class="rating">★★★★★ 5.0/5</div>
+                    <p class="price">$212 <span class="old">$232</span> <span class="discount">-20%</span></p>
+                </div>
+
+                <div class="product">
+                    <img src="./57234b01d5fcac5632cf6823570ca2d1d53d7d73.png" alt="T-shirt">
+                    <h3>Courage Graphic T-shirt</h3>
+                    <div class="rating">★★★★☆ 4.0/5</div>
+                    <p class="price">$145</p>
+                </div>
+
+                <div class="product">
+                    <img src="./89515d714a66d9ca1401101dee4cc689f8bb5ad2.png" alt="Shorts">
+                    <h3>Loose Fit Bermuda Shorts</h3>
+                    <div class="rating">★★★☆☆ 3.0/5</div>
+                    <p class="price">$80</p>
+                </div>
+
+                <div class="product">
+                    <img src="./f180c76808e2ff8a46be56aa933f031aed3abe75.png" alt="Jeans">
+                    <h3>Faded Skinny Jeans</h3>
+                    <div class="rating">★★★★☆ 4.5/5</div>
+                    <p class="price">$210</p>
+                </div>
+            </div>
+
+            <button class="btn-white">View All</button>
+        </div>
+    </section>
+
+    <section class="dress-style">
+        <div class="container">
+            <h2>BROWSE BY dress STYLE</h2>
+            
+            <div class="style-grid">
+                <div class="style-card1">
+                </div>
+                
+                <div class="style-card2">
+                </div>
+                
+                <div class="style-card3">
+                    
+                </div>
+                
+                <div class="style-card4">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2>OUR HAPPY CUSTOMERS</h2>
+            
+            <div class="review-grid">
+                <div class="review1">
+                    <div class="stars">★★★★★</div>
+                    <h4>Sarah M. ✓</h4>
+                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
+                </div>
+
+                <div class="review2">
+                    <div class="stars">★★★★★</div>
+                    <h4>Alex K. ✓</h4>
+                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable."</p>
+                </div>
+
+                <div class="review3">
+                    <div class="stars">★★★★★</div>
+                    <h4>James L. ✓</h4>
+                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point."</p>
+                </div>
+                <div class="review4">
+                    <div class="stars">★★★★★</div>
+                    <h4>Paul</h4>
+                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-box">
+                <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                <div>
+                    <input type="email" placeholder="Enter your email address">
+                    <button>Subscribe to Newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>CRUD.STORE</h3>
+                    <p>We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+                    <div class="social">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>COMPANY</h4>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Works</a>
+                    <a href="#">Career</a>
+                </div>
+
+                <div>
+                    <h4>HELP</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Delivery Details</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <div>
+                    <h4>FAQ</h4>
+                    <a href="#">Account</a>
+                    <a href="#">Manage Deliveries</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Payments</a>
+                </div>
+
+                <div>
+                    <h4>RESOURCES</h4>
+                    <a href="#">Free eBooks</a>
+                    <a href="#">Development Tutorial</a>
+                    <a href="#">How to - Blog</a>
+                    <a href="#">Youtube Playlist</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Crudzaso.com © 2025, All Rights Reserved</p>
+                <div class="payments">
+                    <span>💳 VISA</span>
+                    <span>💳 Mastercard</span>
+                    <span>💰 PayPal</span>
+                    <span>🍎 Pay</span>
+                    <span>G Pay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
